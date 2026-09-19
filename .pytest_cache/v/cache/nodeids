@@ -1,0 +1,23 @@
+[
+  "tests/test_backtester.py::test_align_close_uses_common_dates_only",
+  "tests/test_backtester.py::test_buy_and_hold_equals_price_ratio_without_costs",
+  "tests/test_backtester.py::test_costs_reduce_returns",
+  "tests/test_backtester.py::test_every_strategy_trades_and_reports_metrics",
+  "tests/test_backtester.py::test_no_lookahead",
+  "tests/test_backtester.py::test_signal_cannot_capture_the_bar_it_was_computed_on",
+  "tests/test_backtester.py::test_trade_log_matches_equity",
+  "tests/test_backtester.py::test_volatility_targeting_has_no_nans",
+  "tests/test_backtester.py::test_weekend_gaps_do_not_kill_signals",
+  "tests/test_data.py::test_clean_prices_drops_bad_rows_and_duplicates",
+  "tests/test_data.py::test_no_silent_synthetic_fallback",
+  "tests/test_data.py::test_synthetic_is_opt_in_and_labelled",
+  "tests/test_indicators.py::test_drawdown",
+  "tests/test_indicators.py::test_sma",
+  "tests/test_regimes_risk.py::test_monte_carlo_shape_and_start",
+  "tests/test_regimes_risk.py::test_regimes_are_unlabelled_until_history_exists",
+  "tests/test_regimes_risk.py::test_strategy_by_regime_table",
+  "tests/test_regimes_risk.py::test_var_and_cvar_ordering",
+  "tests/test_strategies.py::test_all_strategies_return_binary_series",
+  "tests/test_strategies.py::test_mean_reversion_actually_trades",
+  "tests/test_strategies.py::test_mean_reversion_enters_on_dip_and_exits_at_mean"
+]

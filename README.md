@@ -14,6 +14,22 @@ An internet connection is needed the first time (Yahoo Finance via `yfinance`). 
 and used as a fallback if a later download fails. **Synthetic data is only used if you tick "Demo mode"**, and the
 dashboard then shows a red banner so fake prices can never be mistaken for real ones.
 
+## Deployment
+The repository now includes a Vercel-compatible Flask entrypoint in `api/index.py`. `app.py` remains available for
+the full local Streamlit dashboard; Vercel serves the browser dashboard and JSON backtest endpoint from the Flask
+function. Deploy from the repository root:
+
+```bash
+npm install -g vercel
+vercel login
+vercel
+```
+
+The deployed page is available at `/`, and the JSON endpoint is `/api/backtest`. The function reads the repository's
+bundled CSV data and may refresh it during local development; Vercel's filesystem is ephemeral, so durable runtime
+data should be moved to object storage before production use.
+For the full Streamlit experience, continue to use `streamlit run app.py` or Streamlit Community Cloud.
+
 ## Features
 | Area | What it does |
 |---|---|
